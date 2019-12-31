@@ -1,0 +1,147 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+header {
+  position: fixed;
+  width: 600px;
+  max-width: 100%;
+  background: #fff;
+  border-bottom: 1px rgb(230, 236, 240) solid;
+  top: 0;
+}
+#main {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px rgb(230, 236, 240) solid;
+}
+
+.back {
+  float:left;
+  height: 34px;;
+  border: 1px rgb(230, 236, 240) solid;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  font-size: 22px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", sans-serif;
+  margin: 5px 0 10px 0;
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 0
+}
+
+li {
+  list-style: none;
+  border-bottom: 1px rgb(230, 236, 240) solid;
+}
+
+.menu {
+  margin-top: 3rem;
+}
+
+.menu li {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.menu a  {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.tweets {
+  margin-top: 45px;
+}
+.tweets-enter-active {
+  transition: all 1s;
+}
+.tweets-enter, .tweets-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.tweet {
+  background: #fff;
+  max-width: 600px;
+  padding: 2rem 1.5rem 0 1.5rem;
+}
+.tweet:hover {
+  background-color: rgb(245, 248, 250);
+}
+
+.tweet-header {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 19px
+}
+
+.tweet-name,
+.tweet-handle,
+.tweet-verified {
+  display: inline-block;
+}
+
+.tweet-name {
+  font-weight: bold;
+}
+
+.tweet-handle {
+  color: rgb(101, 119, 134);
+  text-overflow: ellipsis;
+}
+
+.tweet-verified {
+  height: 20px;
+  width: 20px;
+  fill: rgba(29, 161, 242, 1);
+  vertical-align: bottom
+}
+
+.tweet-text {
+  margin-top: 5px;
+}
+
+.tweet-img img {
+  max-width: 100%;
+  margin: 0.5rem 0;
+  border-radius: 15px;
+}
+
+.tweet-footer {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+.tweet-retweets, .tweet-likes {
+  height: 35px;
+  color: rgb(101, 119, 134);
+  display: inline-block;
+  margin-right: 50px;
+    display: flex;
+  align-items: center;
+}
+
+.tweet-retweets svg, .tweet-likes svg {
+  height: 18px;
+  fill: rgb(101, 119, 134);
+  margin-right: 10px;
+}
